@@ -416,16 +416,7 @@
               </div>
               <div class='col-md-6 order-today'>
                 <h4>Order yours Today</h4>
-                <form action="{{ path('svk_welcome_subscribe')}}" method="post">
-                  <div class="input-group">
-                    <input type="text" class="form-control" name="firstname" placeholder="Firstname">
-                    <input type="text" class="form-control" name="lastname" placeholder="Lastname">                    
-                    <input type="email" class="form-control" name="email" placeholder="Email">
-                    <input type="text" class="form-control" name="birthday" placeholder="Enter your age">
-                    <input type="text" class="form-control" name="country" placeholder="Country">
-                    <input type="submit" class="btn btn-success btn-lg" value="ORDER NOW | $89">
-                  </div>
-                </form>
+                {% render(controller('SvkWelcomeBundle:Welcome:subscribe')) %}
               </div>
             </div>
           </div>
