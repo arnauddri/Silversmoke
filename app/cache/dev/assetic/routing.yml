@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /Applications/MAMP/htdocs/Silversmoke/app/config/routing_dev.yml
+    resource: /Applications/MAMP/htdocs/Silversmoke/Silversmoke/app/config/routing_dev.yml
