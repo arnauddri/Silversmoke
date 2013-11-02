@@ -21,28 +21,42 @@ class WelcomeController extends Controller
     {
     	// just setup a fresh $task object (remove the dummy data)
 	    $subscriber = new Subscriber();
+	    $subscriber->setRegistration(new \Datetime('now'));
+	    $subscriber->setBirthday(new \Datetime('today'));
+	    $subscriber->setCountry('somewhere');
 
 	    $form = $this->createFormBuilder($subscriber)
 	        ->add('firstname', 'text')
 	        ->add('lastname', 'text')
 	        ->add('email', 'email')
-	        ->add('birthday', 'date')
-	        ->add('Subscribe', 'submit')
+	        ->add('birthday', 'date', array(
+                        'widget' => 'single_text',
+                        'format' => 'dd-MM-yyyy',
+                        'attr' => array('class' => 'date')))
 	        ->getForm();
 
-	    $form->handleRequest($request);
+	    if ($request->isMethod('POST')) {
+            
+            $form->bind($request);
 
-	    if ($form->isValid()) {
-	        // fait quelque chose comme sauvegarder la tâche dans la bdd
-	        $em = $this->getDoctrine()->getManager();
-		    $em->persist($subscriber);
-		    $em->flush();
-		    
-	        return $this->redirect($this->generateUrl('svk_welcome_homepage'));
+            if ($form->isValid()) { 
+		        // fait quelque chose comme sauvegarder la tâche dans la bdd
+
+		        $em = $this->getDoctrine()->getManager();
+			    $em->persist($subscriber);
+			    $em->flush();
+
+		        return $this->redirect($this->generateUrl('svk_welcome_subscribed'));
+		    }
 	    }
 
-    	return $this->render('SvkWelcomeBundle::subscriptionForm.html.twig', array(
+    	return $this->render('SvkWelcomeBundle:Subscribe:form.html.twig', array(
             'form' => $form->createView(),
         ));
+    }
+
+    public function successAction()
+    {
+    	return $this->render('SvkWelcomeBundle:Subscribe:success.html.twig');
     }
 }

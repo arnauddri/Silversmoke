@@ -5,3 +5,7 @@ svk_welcome_homepage:
 svk_welcome_subscribe:
     pattern:  /subscribe
     defaults: { _controller: SvkWelcomeBundle:Welcome:subscribe }
+
+svk_welcome_subscribed:
+    pattern:  /subscribed
+    defaults: { _controller: SvkWelcomeBundle:Welcome:success }
