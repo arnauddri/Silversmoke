@@ -1,158 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Silversmoke | Smoke healthier</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/font.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/landing-page.css') }}" rel="stylesheet" media="screen">
+<head>
+  <title>Silversmoke | Smoke healthier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+  <link href="{{ asset('css/font.css') }}" rel="stylesheet" media="screen">
+  <link href="{{ asset('css/landing-page.css') }}" rel="stylesheet" media="screen">
 
-    <link rel="icon" type="image/png" href="{{ asset('img/icon.png') }}" />
+  <link rel="icon" type="image/png" href="{{ asset('img/icon.png') }}" />
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>
         <script src="../../assets/js/html5shiv.js"></script>
         <script src="../../assets/js/respond.min.js"></script>
         <![endif]-->
-    </head>
-    <body>
+      </head>
+      <body>
 
-      <!-- NAVBAR -->
-      <section>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- NAVBAR -->
+        <section>
+          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class='container'>
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="{{ asset('img/logo-navbar.png') }}" width="200px" alt="Quit smoking using a connected electronic cigarette!"></a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#"><button class='btn btn-success'>BUY NOW | $129</button></a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div>
+          </nav>
+        </section>
+
+
+        <!-- HOMESCREEN -->
+        <section id='homescreen' data-stellar-background-ratio="0.5" >
           <div class='container'>
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="{{ asset('img/logo-navbar.png') }}" width="200px" alt="Quit smoking using a connected electronic cigarette!"></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-
-
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#"><button class='btn btn-success'>BUY NOW | $129</button></a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div>
-        </nav>
-      </section>
-
-
-      <!-- HOMESCREEN -->
-      <section id='homescreen' style="background-image: url('../img/homescreen-bck.png')" data-stellar-background-ratio="0.5" >
-        <div class='container'>
-          <div class='row'>
-            <div class="col-md-5" style="padding-top: 150px; text-align:center">
-              <h1>The Smart, Simple and Fun way to reduce smoking</h1>
-              <h3>The cigaret that tracks your nicotine consumption</h3>
-              <button class='btn btn-primary btn-lg'>BUY NOW | $129</button>
-            </div>
-            <div class="col-md-6">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section style='height:100px; background-color: transparent;border-top: dashed 4px rgba(115,124,147,0)'></section>
-
-      <!-- How it works -->
-      <section id='how-it-works'>
-        <div class='container'>
-          <div class='row'>
-            <div class="col-md-12">
-              <h5>HERE'S HOW IT WORKS:</h5>
-            </div>
-            <div id='usp1' class="col-md-12">
-              <div class="col-md-3 usp1">
-                <div class="usp1-1">
-                  <div class="usp-number">1</div>
-                  <font>SMOKE WHEREVER YOU LIKE IT</font>
-                  <img src="{{ asset('img/smoke-wherever.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-                </div>
-                <div class='usp1-2'>
-                  hahahahah
-                </div>
+            <div class='row'>
+              <div class="col-md-5" style="padding-top: 150px; text-align:center">
+                <h1>The Smart, Simple and Fun way to reduce smoking</h1>
+                <h3>The cigaret that tracks your nicotine consumption</h3>
+                <button class='btn btn-primary btn-lg'>BUY NOW | $129</button>
               </div>
-              <div class="col-md-3 usp2">
-                <div class='usp2-1'>
-                  <div class="usp-number">2</div>
-                  <font>TRACK YOUR CONSUMPTION</font>
-                  <img src="{{ asset('img/connect-wirelessly.png') }}"  alt="Quit smoking using a connected electronic cigarette!">
-                </div>
-                <div class='usp2-2'>
-                  <font>TRACK YOUR CONSUMPTION</font>
-                </div>
-              </div>
-              <div class="col-md-3 usp3">
-                <div class='usp3-1'>
-                  <div class="usp-number">3</div>
-                  <font>SYNC YOUR STATS WIRELESSLY</font>
-                  <img src="{{ asset('img/monitor.png') }}"  alt="Quit smoking using a connected electronic cigarette!">
-                </div>
-                <div class='usp3-2'>
-                  SYNC YOUR STATS WIRELESSLY 
-                </div>
-              </div>
-              <div class="col-md-3 usp4">
-                <div class='usp4-1'>
-                  <div class="usp-number">4</div>
-                  <font>SHARE YOUR REAL-TIME PROGRESS</font>
-                  <img src="{{ asset('img/tweet-result.png') }}"  alt="Quit smoking using a connected electronic cigarette!"> 
-                </div>
-                <div class='usp4-2'>
-                  SHARE YOUR REAL-TIME PROGRESS
-                </div>
+              <div class="col-md-6">
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section><div class="container"><div class="row">
-        <div class="col-md-12" style="text-align:center; padding: 50px 0px;">
-          <img src="{{ asset('img/rounded-cigs.png') }}" width="900">
-        </div></div></div></section>
+        <section style='height:100px; background-color: transparent;border-top: dashed 4px rgba(115,124,147,0)'></section>
 
-
-        <!-- Monitor your consumption -->
-        <section id='monitor'>
+        <!-- How it works -->
+        <section id='how-it-works'>
           <div class='container'>
             <div class='row'>
               <div class="col-md-12">
-                <div class="col-md-6">
-                  <img src="{{ asset('img/woman-electronic-cigarette.jpg') }}" width="350">
-                </div>
-                <div class='col-md-6 desc'>
-                  <div class='desc-header'>
-                    <h2>Use your Smartphone to see how you smoke</h2>
+                <h5>HERE'S HOW IT WORKS:</h5>
+              </div>
+              <div id='usp1' class="col-md-12">
+                <div class="col-md-3 usp1">
+                  <div class="usp1-1">
+                    <div class="usp-number">1</div>
+                    <font>SMOKE WHEREVER YOU LIKE IT</font>
+                    <img src="{{ asset('img/smoke-wherever.png') }}" alt="Quit smoking using a connected electronic cigarette!">
                   </div>
-                  <div class='desc-body'>
-                    Have you ever thought of using your smartphone as a screen for cigarette? <br>
-                    Silversmoke helps you keep track of what you smoked. At any time, Silvermoke tracks:
-                    <table>
-                      <tr>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/cigarette-smoked.png') }}" width="30"></div><div>HOW MANY CIGARETTES YOU SMOKED</div></td>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/smoking-trend.png') }}" width="25"></div><div>YOUR SMOKING TRENDS</div></td>
-                      </tr>
-                      <tr>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/money-saved.png') }}" width="25"></div class="monitor-table-icon"><div>THE MONEY YOU SAVED</div></td>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/money-spend.png') }}" width="30"></div><div>THE MONEY YOU SPEND</div></td>
-                      </tr>
-                      <tr>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/battery.png') }}" width="30"></div><div>BATTERY LEFT IN YOUR CIGARETTE</div></td>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/puff-left.png') }}" width="20"></div><div>PUFFS LEFT IN YOUR CARTRIDGE</div></td>
-                      </tr>
-                    </table>
+                  <div class='usp1-2'>
+                    hahahahah
+                  </div>
+                </div>
+                <div class="col-md-3 usp2">
+                  <div class='usp2-1'>
+                    <div class="usp-number">2</div>
+                    <font>TRACK YOUR CONSUMPTION</font>
+                    <img src="{{ asset('img/connect-wirelessly.png') }}"  alt="Quit smoking using a connected electronic cigarette!">
+                  </div>
+                  <div class='usp2-2'>
+                    <font>TRACK YOUR CONSUMPTION</font>
+                  </div>
+                </div>
+                <div class="col-md-3 usp3">
+                  <div class='usp3-1'>
+                    <div class="usp-number">3</div>
+                    <font>SYNC YOUR STATS WIRELESSLY</font>
+                    <img src="{{ asset('img/monitor.png') }}"  alt="Quit smoking using a connected electronic cigarette!">
+                  </div>
+                  <div class='usp3-2'>
+                    SYNC YOUR STATS WIRELESSLY 
+                  </div>
+                </div>
+                <div class="col-md-3 usp4">
+                  <div class='usp4-1'>
+                    <div class="usp-number">4</div>
+                    <font>SHARE YOUR REAL-TIME PROGRESS</font>
+                    <img src="{{ asset('img/tweet-result.png') }}"  alt="Quit smoking using a connected electronic cigarette!"> 
+                  </div>
+                  <div class='usp4-2'>
+                    SHARE YOUR REAL-TIME PROGRESS
                   </div>
                 </div>
               </div>
@@ -160,20 +118,62 @@
           </div>
         </section>
 
+        <section><div class="container"><div class="row">
+          <div class="col-md-12" style="text-align:center; padding: 50px 0px;">
+            <img src="{{ asset('img/rounded-cigs.png') }}" width="900">
+          </div></div></div></section>
 
-        <!-- Set Goal -->
-        <section id='consumption-cap'>
-          <div class='container'>
-            <div class='row'>
-              <div class="col-md-6 cap-desc">
-                <h2>Set Cap to your Consumption</h2>
-                <div>
-                  <p>Take the guilt out knowing exactly what you smoked and capping your weekly consumption</p>
 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <!-- Monitor your consumption -->
+          <section id='monitor'>
+            <div class='container'>
+              <div class='row'>
+                <div class="col-md-12">
+                  <div class="col-md-6">
+                    <img src="{{ asset('img/woman-electronic-cigarette.jpg') }}" width="350">
+                  </div>
+                  <div class='col-md-6 desc'>
+                    <div class='desc-header'>
+                      <h2>Use your Smartphone to see how you smoke</h2>
+                    </div>
+                    <div class='desc-body'>
+                      Have you ever thought of using your smartphone as a screen for cigarette? <br>
+                      Silversmoke helps you keep track of what you smoked. At any time, Silvermoke tracks:
+                      <table>
+                        <tr>
+                          <td><div class="monitor-table-icon"><img src="{{ asset('img/cigarette-smoked.png') }}" width="30"></div><div>HOW MANY CIGARETTES YOU SMOKED</div></td>
+                          <td><div class="monitor-table-icon"><img src="{{ asset('img/smoking-trend.png') }}" width="25"></div><div>YOUR SMOKING TRENDS</div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="monitor-table-icon"><img src="{{ asset('img/money-saved.png') }}" width="25"></div class="monitor-table-icon"><div>THE MONEY YOU SAVED</div></td>
+                          <td><div class="monitor-table-icon"><img src="{{ asset('img/money-spend.png') }}" width="30"></div><div>THE MONEY YOU SPEND</div></td>
+                        </tr>
+                        <tr>
+                          <td><div class="monitor-table-icon"><img src="{{ asset('img/battery.png') }}" width="30"></div><div>BATTERY LEFT IN YOUR CIGARETTE</div></td>
+                          <td><div class="monitor-table-icon"><img src="{{ asset('img/puff-left.png') }}" width="20"></div><div>PUFFS LEFT IN YOUR CARTRIDGE</div></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </section>
 
-                <div class='progress-container'>
+
+          <!-- Set Goal -->
+          <section id='consumption-cap'>
+            <div class='container'>
+              <div class='row'>
+                <div class="col-md-6 cap-desc">
+                  <h2>Set Cap to your Consumption</h2>
+                  <div>
+                    <p>Take the guilt out knowing exactly what you smoked and capping your weekly consumption</p>
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+
+                  <div class='progress-container'>
               <!--
                 <div class="progress progress-top">
                   <div class="progress-bar progress-top" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
@@ -261,6 +261,7 @@
         </div>
       </div>
     </section>
+
     <!-- Competition -->
     <section id='competition'>
       <div class='container'>
@@ -346,28 +347,142 @@
 
 
 
+<!-- CIG-SPEC -->
 <section id="cig-spec">
-  <img src="{{ asset('img/sliversmoke-hori.png') }}" alt="Quit smoking using a connected electronic cigarette!">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Get your Silversmoke Starter Pack Today</h2>
+        <div class="device-pic">
+          <img src="{{ asset('img/sliversmoke-hori.png') }}" alt="Quit smoking using a connected electronic cigarette!">
+        </div>
+      </div>
+
+      <div class='col-md-12'>
+        <div class="col-md-3">
+          <div class='item item-1'>
+            <span>
+              <img src="{{ asset('img/silversmoke-cig-icon.png') }}" width="15" alt="Quit smoking using a connected electronic cigarette!">
+            </span>
+          </div> 
+          <div class='item-desc'>
+            <h4>The Silversmoke Electronic Cigarette</h4>
+            <ul>
+              <li>Rechargeable Battery</li>
+              <li>Rechargeable Battery</li>
+              <li>Rechargeable Battery</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class='item item-2'>
+            <span>
+              <img src="{{ asset('img/silversmoke-sensor.png') }}" width="55" alt="Quit smoking using a connected electronic cigarette!">
+            </span>
+          </div> 
+          <div class='item-desc'>
+            <h4>The Silversmoke Bluetooth Sensor</h4>
+            <ul>
+              <li>Bluetooth 4.0</li>
+              <li>Rechargeable Battery</li>
+              <li>Rechargeable Battery</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class='item item-3'>
+            <span>
+              <img src="{{ asset('img/cartridge.png') }}" width="50" alt="Quit smoking using a connected electronic cigarette!">
+            </span>
+          </div> 
+          <div class='item-desc'>
+            <h4>Flavor Cartridges</h4>
+            <ul>
+              <li>1 Cartridge: 250 Puffs</li>
+              <li>Rechargeable Battery</li>
+              <li>Rechargeable Battery</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class='item item-4'>
+            <span>
+              <img src="{{ asset('img/usb-charger.png') }}" width="50" alt="Quit smoking using a connected electronic cigarette!">
+            </span>
+          </div> 
+          <div class='item-desc'>
+            <h4>Lightning Fast Charger</h4>
+            <ul>
+              <li>Rechargeable Battery</li>
+              <li>Rechargeable Battery</li>
+              <li>Rechargeable Battery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-  <section id='whats-included'>
-    <div class='container'>
-      <div class='row'>
-        <div class='col-md-8 col-offset-2'>
-          <div class="logo">
-            <div>
-              <img src="{{ asset('img/silver-logo-big.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-            </div>
-          </div>
-          <h2>Get your Silversmoke Starter Pack Today</h2>
+
+<!-- WHATS INCLUDED -->
+<section id='whats-included'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-8 col-offset-2'>
+        <div class="logo">
           <div>
-            <div class='col-md-6 package-content'>
+            <img src="{{ asset('img/silver-logo-big.png') }}" alt="Quit smoking using a connected electronic cigarette!">
+          </div>
+        </div>
+        <h2>Get your Silversmoke Starter Pack Today</h2>
+        <div>
+          <div class='col-md-6 package-content'>
+            <div>
+              <div class='item item-1'>
+                <img src="{{ asset('img/silversmoke-cig-icon.png') }}" width="15" alt="Quit smoking using a connected electronic cigarette!">
+              </div> 
+              <div class='item-desc'>
+                <h4>The Silversmoke Electronic Cigarette</h4>
+                <ul>
+                  <li>Rechargeable Battery</li>
+                  <li>Rechargeable Battery</li>
+                  <li>Rechargeable Battery</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class='item item-2'>
+                <img src="{{ asset('img/silversmoke-sensor.png') }}" width="55" alt="Quit smoking using a connected electronic cigarette!"></div> 
+                <div class='item-desc'>
+                  <h4>The Silversmoke Bluetooth Sensor</h4>
+                  <ul>
+                    <li>Bluetooth 4.0</li>
+                    <li>Rechargeable Battery</li>
+                    <li>Rechargeable Battery</li>
+                  </ul>
+                </div>
+              </div>
               <div>
-                <div class='item item-1'>
-                  <img src="{{ asset('img/silversmoke-cig-icon.png') }}" width="15" alt="Quit smoking using a connected electronic cigarette!">
+                <div class='item item-3'>
+                  <img src="{{ asset('img/cartridge.png') }}" width="50" alt="Quit smoking using a connected electronic cigarette!">
                 </div> 
                 <div class='item-desc'>
-                  <h4>The Silversmoke Electronic Cigarette</h4>
+                  <h4>Flavor Cartridges</h4>
+                  <ul>
+                    <li>1 Cartridge: 250 Puffs</li>
+                    <li>Rechargeable Battery</li>
+                    <li>Rechargeable Battery</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class='item item-4'>
+                  <img src="{{ asset('img/usb-charger.png') }}" width="50" alt="Quit smoking using a connected electronic cigarette!">
+                </div> 
+                <div class='item-desc'>
+                  <h4>Lightning Fast Charger</h4>
                   <ul>
                     <li>Rechargeable Battery</li>
                     <li>Rechargeable Battery</li>
@@ -375,65 +490,27 @@
                   </ul>
                 </div>
               </div>
-              <div>
-                <div class='item item-2'>
-                  <img src="{{ asset('img/silversmoke-sensor.png') }}" width="55" alt="Quit smoking using a connected electronic cigarette!"></div> 
-                  <div class='item-desc'>
-                    <h4>The Silversmoke Bluetooth Sensor</h4>
-                    <ul>
-                      <li>Bluetooth 4.0</li>
-                      <li>Rechargeable Battery</li>
-                      <li>Rechargeable Battery</li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div class='item item-3'>
-                    <img src="{{ asset('img/cartridge.png') }}" width="50" alt="Quit smoking using a connected electronic cigarette!">
-                  </div> 
-                  <div class='item-desc'>
-                    <h4>Flavor Cartridges</h4>
-                    <ul>
-                      <li>1 Cartridge: 250 Puffs</li>
-                      <li>Rechargeable Battery</li>
-                      <li>Rechargeable Battery</li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div class='item item-4'>
-                    <img src="{{ asset('img/usb-charger.png') }}" width="50" alt="Quit smoking using a connected electronic cigarette!">
-                  </div> 
-                  <div class='item-desc'>
-                    <h4>Lightning Fast Charger</h4>
-                    <ul>
-                      <li>Rechargeable Battery</li>
-                      <li>Rechargeable Battery</li>
-                      <li>Rechargeable Battery</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class='col-md-6 order-today'>
-                <h4>Order yours Today</h4>
-                {% render(controller('SvkWelcomeBundle:Welcome:subscribe')) %}
-              </div>
+            </div>
+            <div class='col-md-6 order-today'>
+              <h4>Order yours Today</h4>
+              {% render(controller('SvkWelcomeBundle:Welcome:subscribe')) %}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.stellar.js') }}"></script>
-    <script src="{{ asset('js/landing-page.js') }}"></script>
-  </body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.stellar.js') }}"></script>
+  <script src="{{ asset('js/landing-page.js') }}"></script>
+</body>
 </html>

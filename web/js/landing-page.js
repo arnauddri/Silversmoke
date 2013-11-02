@@ -17,7 +17,7 @@ $(document).scroll(function() {
 
 	var paytop=Math.min(($(document).scrollTop())/(jQuery('.progress').offset().top),100);
 
-	$('.progress-bar').width(Math.round(100*paytop)-10+'%');
+	$('.progress-bar').width(Math.min(Math.round(100*paytop)-10,90)+'%');
 	$('.percent-text').html(Math.round(100*paytop)+'%');
 	$('.puffs').html(Math.round(($(document).scrollTop()*0.6)));
 	$('.cigs').html(Math.round(($(document).scrollTop()*0.6)/11));
