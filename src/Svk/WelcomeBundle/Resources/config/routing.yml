@@ -1,0 +1,7 @@
+svk_welcome_homepage:
+    pattern:  /
+    defaults: { _controller: SvkWelcomeBundle:Welcome:index }
+
+svk_welcome_subscribe:
+    pattern:  /subscribe
+    defaults: { _controller: SvkWelcomeBundle:Welcome:subscribe }

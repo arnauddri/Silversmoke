@@ -1,0 +1,15 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     localhost
+    database_port:     ~
+    database_name:     silversmoke
+    database_user:     root
+    database_password: root
+
+    mailer_transport:  smtp
+    mailer_host:       smtp.alwaysdata.com
+    mailer_user:       jules@twinkler.co
+    mailer_password:   Ozanam1956
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt

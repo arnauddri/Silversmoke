@@ -1,0 +1,4 @@
+svk_welcome:
+    resource: "@SvkWelcomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
