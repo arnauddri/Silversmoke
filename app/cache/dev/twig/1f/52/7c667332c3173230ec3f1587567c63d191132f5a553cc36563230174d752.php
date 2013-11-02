@@ -536,20 +536,11 @@ class __TwigTemplate_1f527c667332c3173230ec3f1587567c63d191132f5a553cc3656323017
               </div>
               <div class='col-md-6 order-today'>
                 <h4>Order yours Today</h4>
-                <form action=\"";
+                ";
         // line 419
-        echo $this->env->getExtension('routing')->getPath("svk_welcome_subscribe");
-        echo "\" method=\"post\">
-                  <div class=\"input-group\">
-                    <input type=\"text\" class=\"form-control\" name=\"firstname\" placeholder=\"Firstname\">
-                    <input type=\"text\" class=\"form-control\" name=\"lastname\" placeholder=\"Lastname\">                    
-                    <input type=\"email\" class=\"form-control\" name=\"email\" placeholder=\"Email\">
-                    <input type=\"number\" class=\"form-control\" name=\"age\" placeholder=\"Enter your age\">
-                    <input type=\"text\" class=\"form-control\" name=\"country\" placeholder=\"Country\">
-                    <input type=\"submit\" class=\"btn btn-success btn-lg\" value=\"ORDER NOW | \$89\">
-                  </div>
-                </form>
-              </div>
+        echo $this->env->getExtension('actions')->renderUri($this->env->getExtension('http_kernel')->controller("SvkWelcomeBundle:Welcome:subscribe"), array());
+        // line 420
+        echo "              </div>
             </div>
           </div>
         </div>
@@ -565,15 +556,15 @@ class __TwigTemplate_1f527c667332c3173230ec3f1587567c63d191132f5a553cc3656323017
     <script src=\"https://code.jquery.com/jquery.js\"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src=\"";
-        // line 444
+        // line 435
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bootstrap/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 445
+        // line 436
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery.stellar.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 446
+        // line 437
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/landing-page.js"), "html", null, true);
         echo "\"></script>
   </body>
@@ -592,6 +583,6 @@ class __TwigTemplate_1f527c667332c3173230ec3f1587567c63d191132f5a553cc3656323017
 
     public function getDebugInfo()
     {
-        return array (  577 => 446,  573 => 445,  569 => 444,  541 => 419,  524 => 405,  508 => 392,  493 => 380,  477 => 367,  466 => 359,  454 => 350,  423 => 322,  416 => 318,  409 => 314,  402 => 310,  395 => 306,  388 => 302,  364 => 281,  350 => 270,  316 => 239,  306 => 232,  286 => 215,  221 => 153,  217 => 152,  211 => 149,  207 => 148,  201 => 145,  197 => 144,  183 => 133,  170 => 123,  154 => 110,  141 => 100,  128 => 90,  115 => 80,  65 => 33,  40 => 11,  35 => 9,  31 => 8,  27 => 7,  19 => 1,);
+        return array (  568 => 437,  564 => 436,  560 => 435,  543 => 420,  541 => 419,  524 => 405,  508 => 392,  493 => 380,  477 => 367,  466 => 359,  454 => 350,  423 => 322,  416 => 318,  409 => 314,  402 => 310,  395 => 306,  388 => 302,  364 => 281,  350 => 270,  316 => 239,  306 => 232,  286 => 215,  221 => 153,  217 => 152,  211 => 149,  207 => 148,  201 => 145,  197 => 144,  183 => 133,  170 => 123,  154 => 110,  141 => 100,  128 => 90,  115 => 80,  65 => 33,  40 => 11,  35 => 9,  31 => 8,  27 => 7,  19 => 1,);
     }
 }

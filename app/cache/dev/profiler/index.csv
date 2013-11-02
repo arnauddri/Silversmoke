@@ -148,6 +148,7 @@ e2d603,::1,GET,http://localhost:8888/Silversmoke/web/app_dev.php/,1383418631,
 d7336d,::1,GET,http://localhost:8888/Silversmoke/web/app_dev.php/subscribe,1383418636,
 84eacb,::1,POST,http://localhost:8888/Silversmoke/web/app_dev.php/subscribe,1383418636,
 d21c68,::1,POST,http://localhost:8888/Silversmoke/web/app_dev.php/subscribe,1383418726,
+<<<<<<< HEAD
 0a9a74,::1,GET,http://localhost:8888/Silversmoke/Silversmoke/web/app_dev.php/,1383419869,
 8c3108,::1,GET,http://localhost:8888/Silversmoke/Silversmoke/web/app_dev.php/,1383419869,
 bf58dd,::1,GET,http://localhost:8888/Silversmoke/Silversmoke/web/app_dev.php/,1383419944,
@@ -156,3 +157,11 @@ c86836,::1,GET,http://localhost:8888/Silversmoke/Silversmoke/web/app_dev.php/,13
 bfa0bc,::1,GET,http://localhost:8888/Silversmoke/Silversmoke/web/app_dev.php/,1383419959,
 6a1458,::1,GET,http://localhost:8888/Silversmoke/Silversmoke/web/app_dev.php/,1383419959,
 87726e,::1,GET,http://localhost:8888/Silversmoke/Silversmoke/web/app_dev.php/,1383419960,
+=======
+6ae19b,::1,GET,http://localhost:8888/Silversmoke/web/app_dev.php/,1383419717,
+85cec6,127.0.0.1,GET,http://localhost:8888/Silversmoke/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DSvkWelcomeBundle%253AWelcome%253Asubscribe,1383419717,6ae19b
+3e1978,::1,GET,http://localhost:8888/Silversmoke/web/app_dev.php/,1383419835,
+62982b,127.0.0.1,GET,http://localhost:8888/Silversmoke/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DSvkWelcomeBundle%253AWelcome%253Asubscribe,1383419835,3e1978
+54227b,::1,POST,http://localhost:8888/Silversmoke/web/app_dev.php/,1383419844,
+7aa375,127.0.0.1,GET,http://localhost:8888/Silversmoke/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DSvkWelcomeBundle%253AWelcome%253Asubscribe,1383419844,54227b
+>>>>>>> 75ef0f0f4927f41c064226c511081b200937909d
