@@ -346,6 +346,7 @@ h2{
 	visibility: visible;
 	box-sizing:border-box;
 	position: relative;
+	background-color: white;
 }
 
 #tweet .tweet-header{
@@ -388,8 +389,6 @@ h2{
 #tweet .tweet-desc{
 	margin-top: 80px;
 	height: 500px;
-	background-image: url(' ../img/twitter-bck.png');
-	background-repeat: no-repeat;
 }
 
 
