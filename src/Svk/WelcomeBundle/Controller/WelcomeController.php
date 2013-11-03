@@ -13,8 +13,7 @@ class WelcomeController extends Controller
     public function indexAction()
     {
     	$subscribers = $this->getDoctrine()->getRepository('SvkWelcomeBundle:Subscriber')->findAll();
-    	$count = 32;
-        return $this->render('SvkWelcomeBundle::index.html.twig', array('count' => $count));
+        return $this->render('SvkWelcomeBundle::index.html.twig', array('count' => count($subscribers)));
     }
 
     public function subscribeAction(Request $request)
