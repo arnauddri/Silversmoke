@@ -1,12 +1,16 @@
 <form action="{{ path('svk_welcome_subscribe') }}" method="post" {{ form_enctype(form) }}>
     {{ form_errors(form) }}
 
-    {{ form_row(form.firstname) }}
-    {{ form_row(form.lastname) }}
-    {{ form_row(form.email) }}
-    {{ form_row(form.birthday) }}
+<div class="signup-form">
+    <input type="text" id="form_firstname" placeholder="Firstname" name="form[firstname]" required="required"/>
+    <input type="text" id="form_lastname" placeholder="Lastname" name="form[lastname]" required="required"/>
+</div>
+<div class="signup-form">
+	<input type="text" id="form_birthday" placeholder="MM-YY" name="form[birthday]" required="required" class="date"/>
+</div>
+<div  class="signup-form signup-email">
+    <input type="email" id="form_email" placeholder="Your e-mail Address" name="form[email]" required="required"/>
+</div>
 
-    {{ form_rest(form) }}
-
-    <input type="submit" />
+    <input class="btn btn-success" type="submit" />
 </form>
