@@ -59,9 +59,37 @@ h2{
 	margin: 40px auto;
 }
 
+#usp{
+	padding: 50px 0px;
+}
+
+#usp .caption{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#usp .usp-desc h4{
+	color: #666666;    
+	font-size: 20px;
+}
+
+#usp .usp-desc{
+	text-align: left;
+	padding: 20px;
+	color: #666666;    
+	font-size: 18px;
+    line-height: 1.5em;
+}
+
+#usp img{
+	text-align: left;
+	width: 100%
+}
+
 #how-it-works{
 	min-height: 300px;
 }
+
 
 #how-it-works .col-md-3{
 	min-height: 180px;
@@ -88,6 +116,7 @@ h2{
 
 .usp1 .usp1-2,.usp2 .usp2-2,.usp3 .usp3-2,.usp4 .usp4-2{
 	top:200px;
+	position: absolute;
 }
 
 .usp1 .usp1-1 font,.usp2 .usp2-1 font,.usp3 .usp3-1 font,.usp4 .usp4-1 font{
@@ -104,7 +133,17 @@ h2{
 	left: 65px;
 }
 
+.usp-bottom-container{
+	position: relative;
+	padding-top: 95px
+}
 
+.usp1 .usp1-2 .usp-bottom-container img{
+	position: absolute;
+	top: 10px;
+	left: 115px;
+	width: 50px
+}
 
 .usp2{
 	background-color: rgb(241,60,110);
@@ -118,6 +157,15 @@ h2{
 	left: 90px;
 }
 
+
+.usp2 .usp2-2 .usp-bottom-container img{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	width: 80px
+}
+
+
 .usp3{
 	background-color: rgb(246, 119,44);
 	background-color: rgb(182, 59, 106);
@@ -129,6 +177,13 @@ h2{
 	width: 120px;
 	top: 120px;
 	left: 90px;
+}
+
+.usp3 .usp3-2 .usp-bottom-container img{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	width: 80px
 }
 
 .usp4{
@@ -144,6 +199,12 @@ h2{
 	left: 90px;
 }
 
+.usp4 .usp4-2 .usp-bottom-container img{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	width: 80px
+}
 .usp-number{
 	position: absolute;
 	top:0;
@@ -170,7 +231,15 @@ h2{
 	background-color: rgb(222,39,81);
 }
 
+/*---MONITOR---*/
+#connect{
+	text-align: center;
+	margin-bottom: 40px
+}
 
+#connect h2{
+	margin-bottom: 80px;
+}
 
 /*---MONITOR---*/
 
@@ -179,29 +248,34 @@ h2{
 	min-height: 300px;
 }
 
-#monitor .col-md-6{
-	margin: 40px 0px;
+#monitor .col-md-5{
+	margin: 30px 0px;
 	height: 80%;
 	color:white;
 }
 
-#monitor .col-md-6.desc{
-	height: 450px;
+#monitor .col-md-6 img{
+	margin: 30px 0px;
+}
+
+#monitor .desc{
+	color:white;
+	margin: 30px 0px
 }
 
 
-#monitor .col-md-6.desc .desc-header{
+#monitor .desc .desc-header{
 	background-color: rgb(26, 188, 156);
   background-color:#00A9E4;
 	height: 20%;
 }
 
-#monitor .col-md-6.desc .desc-header h2{
+#monitor .desc .desc-header h2{
 	margin: 0px;
 	padding: 20px 10px;
 }
 
-#monitor .col-md-6.desc .desc-body{
+#monitor .desc .desc-body{
 	background-color: rgb(79,79,79);
 	height: 80%;
 	font-size: 18px;
@@ -258,8 +332,37 @@ h2{
 	box-sizing:border-box;
 }
 
+#consumption-cap h4{
+	margin-top: 20px;
+	font-size: 18px;
+	color: #666;
+}
 #consumption-cap p{
 	font-size: 18px;
+}
+
+#consumption-cap ul{
+	list-style: none;
+	padding-left: 20px;
+  font-size:18px;
+  line-height:1.5em;
+}
+
+#consumption-cap  li { 
+   position:relative;
+   margin:5px 0px;
+}
+
+#consumption-cap  li:before {
+      content:'';
+      display: block;
+      position: absolute;
+      width: 6px;
+      height:6px;
+      border-radius:6px;
+      left: -20px;
+      top: .5em;
+      background-color: #F13C6E;
 }
 
 #consumption-cap .iphone-screenshot{
@@ -619,6 +722,7 @@ h2{
 	height: 100%;
 	background-color: white;
 	padding: 20px;
+	text-align: center;
 }
 
 #whats-included .logo{
@@ -690,9 +794,30 @@ h2{
 	margin: 0px;
 }
 
+#whats-included .voucher img{
+	width: 100px;
+}
 
 
+#whats-included .voucher{
+	width: 50%;
+	border: dotted 1px #CCCCCC;
+	height: 130px;
+	border-radius: 5px;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
 
+#whats-included .voucher div{
+	display: inline-block;
+	width: 49%
+}
+
+#whats-included .voucher h4{
+	line-height: 20px
+}
 
 
 
