@@ -317,7 +317,6 @@ h2{
 
 #consumption-cap{
 	background: none repeat scroll 0 0 #EFEFEF;
-	min-height: 500px;
 	position: relative;
 	box-sizing:border-box;
 }
@@ -372,7 +371,7 @@ h2{
 }
 
 #consumption-cap .iphone-screenshot img{
-	width: 350px;
+	width: 450px;
 	position: absolute;
 	bottom: 0px;
 
@@ -548,7 +547,9 @@ h2{
 }
 
 #tweet .desc-body{
-	padding: 20px
+	padding: 20px;
+  	font-size:18px;
+
 }
 
 /*COMPETITION*/
@@ -592,6 +593,7 @@ h2{
 	margin-left: 10px;
 	width: 50%;
 	margin-top: 20%;
+  	font-size:18px;
 }
 
 #competition .col-md-6.desc .iphone-competition{
@@ -613,6 +615,12 @@ h2{
 	background-color: rgba(255,255,255, 0.6);
 	margin-top: 100px;
 	padding: 10px;
+}
+
+#parallax p{
+
+  	font-size:18px;
+
 }
 
 
