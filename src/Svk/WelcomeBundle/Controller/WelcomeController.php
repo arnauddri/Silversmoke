@@ -50,6 +50,17 @@ class WelcomeController extends Controller
 			    $em->persist($subscriber);
 			    $em->flush();
 
+                $mailer = $this->get('mailer');
+                $message = \Swift_Message::newInstance();
+                $message->setSubject('Thank you for registering to Silversmoke')
+                        ->setFrom(array('jessica@getsilversmoke.com' => 'Jessica from Silversmoke'))
+                        ->setTo($subscriber->getEmail())
+                        ->setContentType('text/html')
+                        ->setBody($this->renderView('SvkWelcomeBundle:Subscribe:subscription.email.twig', array('name' => $subscriber->getFirstname())))
+                ;
+                $mailer->send($message);
+
+
 		        return $this->redirect($this->generateUrl('svk_welcome_subscribed'));
 		    }
 	    }
