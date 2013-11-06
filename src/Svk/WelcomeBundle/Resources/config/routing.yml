@@ -9,3 +9,13 @@ svk_welcome_subscribe:
 svk_welcome_subscribed:
     pattern:  /subscribed
     defaults: { _controller: SvkWelcomeBundle:Welcome:success }
+
+svk_welcome_about:
+    pattern: /about
+    defaults: {_controller: SvkWelcomeBundle:Welcome:about }
+svk_welcome_faq:
+    pattern: /faq
+    defaults: {_controller: SvkWelcomeBundle:Welcome:faq }
+svk_welcome_contact:
+    pattern: /contact
+    defaults: {_controller: SvkWelcomeBundle:Welcome:contact }

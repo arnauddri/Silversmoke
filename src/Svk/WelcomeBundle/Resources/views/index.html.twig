@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Silversmoke | Smoke healthier</title>
+  {% block title %}<title>Silversmoke | Smoke healthier</title>{% endblock %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
@@ -39,7 +39,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="{{ asset('img/logo-navbar.png') }}" width="200px" alt="Quit smoking using a connected electronic cigarette!"></a>
+                <a class="navbar-brand" href="{{ path('svk_welcome_homepage') }}"><img src="{{ asset('img/logo-navbar.png') }}" width="200px" alt="Quit smoking using a connected electronic cigarette!"></a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,6 +55,7 @@
           </nav>
         </section>
 
+        {% block content %}
 
         <!-- HOMESCREEN -->
         <section id='homescreen' data-stellar-background-ratio="0.5" >
@@ -520,15 +521,16 @@
   </div>
 </section>
 
+{% endblock %}
 
 <footer>
   <div>
     <ul>
-      <li><a href="">About</a></li>
+      <li><a href="{{ path('svk_welcome_about') }}">About</a></li>
       <li>|</li>
-      <li><a href="">Help & FAQs</a></li>
+      <li><a href="{{ path('svk_welcome_faq') }}">Help & FAQs</a></li>
       <li>|</li>
-      <li><a href="">Contact</a></li>
+      <li><a href="{{ path('svk_welcome_contact') }}">Contact</a></li>
     </ul>
     <p>Copyright © 2013 Silversmoke, Inc. All rights reserved.</p>
   </div>
