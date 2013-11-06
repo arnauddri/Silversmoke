@@ -684,9 +684,6 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 
 #cig-spec{
 	min-height: 300px;
-	border-bottom-color:rgba(115, 124, 147, 0.298039);
-	border-bottom-style:dashed;
-	border-bottom-width:4px;
 	text-align: center;
 }
 
@@ -996,4 +993,47 @@ footer p{
 	background-color: rgb(250,250,250);
 	border-bottom-left-radius:6px;
 	border-bottom-right-radius:6px;
+}
+
+
+
+
+
+/*-----FAQ-----*/
+#faq{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+#faq *{	
+	outline: none;
+}
+
+#faq ul{
+  -webkit-user-select:none;
+  color:#0088D6;
+  font-size:20px;
+  line-height:1.3;
+  text-decoration:none;
+  list-style: none;
+}
+
+#faq ul li{
+	margin: 20px 0px;
+}
+
+#faq ul li summary{
+	cursor: pointer;
+}
+
+
+#faq ul li p {
+  font-size:18px;
+  line-height:1.4;
+  margin-top:10px;
+  color: rgb(107,107,107);
+  padding-left: 25px;
+}
+
+#faq .col-2{
+	display: inline-block;
 }
