@@ -9,15 +9,15 @@ h2{
 }
 
 * input{
-  -webkit-appearance:none;
-  -webkit-box-shadow:none;
-  -webkit-transition:border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+	-webkit-appearance:none;
+	-webkit-box-shadow:none;
+	-webkit-transition:border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
 	border:2px solid #BDC3C7;
 	height: 40px;
 	border-radius: 5px;
-  font-size:15px;
-  height:42px;
-  padding:8px 12px;
+	font-size:15px;
+	height:42px;
+	padding:8px 12px;
 }
 
 
@@ -25,6 +25,10 @@ h2{
 	border-color: #1ABC9C;
 	border:2px solid  #1ABC9C !important;
 	outline: none;
+}
+
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+	margin-right:0px;
 }
 
 .navbar-nav > li > a {
@@ -78,7 +82,7 @@ h2{
 	padding: 20px;
 	color: #666666;    
 	font-size: 18px;
-    line-height: 1.5em;
+	line-height: 1.5em;
 }
 
 #usp img{
@@ -266,7 +270,7 @@ h2{
 
 #monitor .desc .desc-header{
 	background-color: rgb(26, 188, 156);
-  background-color:#00A9E4;
+	background-color:#00A9E4;
 	height: 20%;
 }
 
@@ -343,25 +347,26 @@ h2{
 #consumption-cap ul{
 	list-style: none;
 	padding-left: 20px;
-  font-size:18px;
-  line-height:1.5em;
+	font-size:18px;
+	line-height:1.5em;
+	margin: 50px 0px;
 }
 
 #consumption-cap  li { 
-   position:relative;
-   margin:5px 0px;
+	position:relative;
+	margin:5px 0px;
 }
 
 #consumption-cap  li:before {
-      content:'';
-      display: block;
-      position: absolute;
-      width: 6px;
-      height:6px;
-      border-radius:6px;
-      left: -20px;
-      top: .5em;
-      background-color: #F13C6E;
+	content:'';
+	display: block;
+	position: absolute;
+	width: 6px;
+	height:6px;
+	border-radius:6px;
+	left: -20px;
+	top: .5em;
+	background-color: #F13C6E;
 }
 
 #consumption-cap .iphone-screenshot{
@@ -371,7 +376,7 @@ h2{
 }
 
 #consumption-cap .iphone-screenshot img{
-	width: 450px;
+	width: 400px;
 	position: absolute;
 	bottom: 0px;
 
@@ -451,9 +456,9 @@ h2{
 
 #tweet{
 	min-height: 300px;  
-	border-bottom-color:rgba(115, 124, 147, 0.298039);
-	border-bottom-style:dashed;
-	border-bottom-width:4px;
+	border-top-color:rgba(115, 124, 147, 0.298039);
+	border-top-style:dashed;
+	border-top-width:4px;
 }
 
 #tweet .tweet{
@@ -520,12 +525,23 @@ h2{
 }
 
 #tweet .tweet-desc{
+	margin: 0px auto;
 	margin-top: 80px;
 	margin-bottom: 80px;
 	background-color: rgba(0,169,228, 0.7);
 	color: white;
 	padding: 0px;
-	width: 95%
+	padding-top: 70px;
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 22px;
+}
+
+
+#tweet .tweet-desc p{
+	font-size: 20px;
 }
 
 
@@ -548,7 +564,7 @@ h2{
 
 #tweet .desc-body{
 	padding: 20px;
-  	font-size:18px;
+	font-size:18px;
 
 }
 
@@ -558,7 +574,7 @@ h2{
 #competition{
 	min-height: 600px;
 	padding: 100px 0px;
-	background-color:#FBFBFB;
+	background-color:#FFF;
 }
 
 #competition .col-md-6.desc{
@@ -574,7 +590,7 @@ h2{
 	text-align: center;
 }
 
-#competition .col-md-6.desc {
+#competition .desc {
 	background-color: #FFBB42;
 	color: #fff;
 }
@@ -593,7 +609,7 @@ h2{
 	margin-left: 10px;
 	width: 50%;
 	margin-top: 20%;
-  	font-size:18px;
+	font-size:18px;
 }
 
 #competition .col-md-6.desc .iphone-competition{
@@ -612,14 +628,23 @@ h2{
 }
 
 #parallax .col-md-4{
-	background-color: rgba(255,255,255, 0.6);
+	background-color: rgba(255,255,255, 0);
+	background-image: url(' ../img/twitter-bubble-bck.png');
 	margin-top: 100px;
-	padding: 10px;
+	padding: 20px;
+	width: 280px;
+	height: 250px;
+	text-align: center;
+	padding-top: 80px;
+	overflow: visible;
+	padding-right: 40px;
+	color: rgb(60,60,60);
+
 }
 
 #parallax p{
 
-  	font-size:18px;
+	font-size:20px;
 
 }
 
@@ -715,15 +740,31 @@ h2{
 	left: 25px
 }
 
+
+/*Arrive soon*/
+#arrive-soon{
+	text-align: center;
+	min-height: 400px;
+	padding-top: 80px;
+}
+
+#arrive-soon .cig-img{
+	margin: 60px auto;
+}
+
+#arrive-soon .section-separator{
+	width: 80%;
+}
+
 /*WHATS INCLUDED*/
 
 #whats-included{
-	min-height: 500px;
-	background-color: #FBFBFB;
+	min-height: 400px;
+	background-color: #FFF;
 }
 
 #whats-included .container .row .col-md-8{
-	margin-top: 140px;
+	margin-top: 80px;
 	margin-bottom: 100px;
 	border: dotted 1px #CCCCCC;
 	border-radius: 5px;
@@ -747,7 +788,7 @@ h2{
 	border-radius: 50%;
 	background-color: white;
 	top:-110px;
-	left:40%;
+	left:38%;
 }
 
 #whats-included h2{
@@ -806,6 +847,32 @@ h2{
 	width: 100px;
 }
 
+#whats-included p{
+	font-size: 18px;
+	margin: 30px 50px;
+	margin-bottom: 0px;
+}
+
+
+#whats-included .countdown{
+	margin: 30px 0px;
+	margin-top: 10px
+}
+
+#whats-included .countdown strong{
+	font-size: 22px;
+	line-height: 50px;
+	background-color: rgba(255, 187, 66, 0.2);
+	border-radius: 5px;
+	padding: 20px;
+	color: #e68d15;
+}
+
+#whats-included .btn{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
 
 #whats-included .voucher{
 	width: 50%;
@@ -830,3 +897,103 @@ h2{
 
 
 
+footer{
+	text-align: center;
+	color: #B7B7B7;
+	padding-top: 10px;
+	background-color: white;
+}
+
+footer li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 30px;
+	text-transform:uppercase;
+	font-family:"Proxima-light";
+	font-size: 16px;
+}
+footer a{
+	-webkit-transition:color 175ms cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition:color 175ms cubic-bezier(0.645, 0.045, 0.355, 1);
+	color:#B7B7B7;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color:#767676;
+}
+
+footer p{
+	margin:20px 0px;
+}
+
+
+
+/*MODAL*/
+.modal{
+	overflow: hidden;
+}
+
+.modal input{
+	margin: 10px auto;
+}
+
+.modal form{
+	text-align: center;
+}
+
+.modal #form_firstname,.modal #form_lastname{
+	width: 200px;
+
+}
+
+.modal .signup-email{
+	margin-left:auto;
+	margin-right: auto;
+
+}
+
+.modal #form_email{
+	width: 400px;
+}
+
+.modal .age-verification{
+	width: 340px;
+	line-height: 12px;
+	margin-right:auto;
+	margin-left: auto;
+}
+
+.modal-footer{
+	text-align: center;
+}
+
+.modal-footer input{
+	width: 200px;
+	font-size: 18px;
+}
+
+
+.modal .alert{
+	text-align: center;
+}
+
+.modal-header{
+	background-color: #428BCA;
+	color: white;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+	height: 80px;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.modal-header .modal-title{
+	font-size: 20px
+}
+
+.modal-footer{
+	background-color: rgb(250,250,250);
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+}
