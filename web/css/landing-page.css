@@ -1037,3 +1037,23 @@ footer p{
 #faq .col-2{
 	display: inline-block;
 }
+
+
+
+/*-----ABOUT-----*/
+#about .bs-sidebar{
+	border: 1px solid #DDDDDD;
+	width: 250px;
+	margin-top: 30px;
+	border-radius: 6px;
+}
+
+#about li:last-child{
+	border-bottom: none
+}
+
+#about li{
+	margin: 0px;
+	border-bottom: 1px solid #DDDDDD;
+	padding: 10px
+}
