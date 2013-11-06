@@ -60,7 +60,6 @@ class WelcomeController extends Controller
                 ;
                 $mailer->send($message);
 
-
 		        return $this->redirect($this->generateUrl('svk_welcome_subscribed'));
 		    }
 	    }
@@ -88,5 +87,38 @@ class WelcomeController extends Controller
     public function contactAction()
     {
         return $this->render('SvkWelcomeBundle:Footer:contact.html.twig', array('count' => $this->count()));   
+    }
+
+    public function contactFormAction(Request $request)
+    {
+        $defaultData = array();
+        $form = $this->createFormBuilder($defaultData)
+            ->add('name', 'text')
+            ->add('email', 'email')
+            ->add('message', 'textarea')
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            // Les données sont un tableau avec les clés "name", "email", et "message"
+            $data = $form->getData();
+
+            $mailer = $this->get('mailer');
+            $message = \Swift_Message::newInstance();
+            $message->setSubject('New message from '.$data['name'])
+                    ->setFrom(array($data['email'] => $data['name'].' from Silversmoke'))
+                    ->setTo('arnaud.drizard@gmail.com')
+                    ->setContentType('text/html')
+                    ->setBody($data['message'])
+            ;
+            $mailer->send($message);
+
+            return $this->redirect($this->generateUrl('svk_welcome_homepage'));
+        }
+
+        return $this->render('SvkWelcomeBundle:Footer:contactForm.html.twig', array(
+            'form' => $form->createView(),
+        ));
     }
 }

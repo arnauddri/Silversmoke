@@ -19,3 +19,6 @@ svk_welcome_faq:
 svk_welcome_contact:
     pattern: /contact
     defaults: {_controller: SvkWelcomeBundle:Welcome:contact }
+svk_welcome_contact_form:
+    pattern: /contact/form
+    defaults: {_controller: SvkWelcomeBundle:Welcome:contactForm }
