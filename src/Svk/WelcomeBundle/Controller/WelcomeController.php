@@ -10,10 +10,15 @@ use Svk\WelcomeBundle\Entity\Subscriber;
 
 class WelcomeController extends Controller
 {
+    private function count()
+    {
+        $subscribers = $this->getDoctrine()->getRepository('SvkWelcomeBundle:Subscriber')->findAll();
+        return count($subscribers);
+    }
+
     public function indexAction()
     {
-    	$subscribers = $this->getDoctrine()->getRepository('SvkWelcomeBundle:Subscriber')->findAll();
-        return $this->render('SvkWelcomeBundle::index.html.twig', array('count' => count($subscribers)));
+        return $this->render('SvkWelcomeBundle::index.html.twig', array('count' => $this->count()));
     }
 
     public function subscribeAction(Request $request)
@@ -56,6 +61,21 @@ class WelcomeController extends Controller
 
     public function successAction()
     {
-    	return $this->render('SvkWelcomeBundle:Subscribe:success.html.twig');
+    	return $this->render('SvkWelcomeBundle:Subscribe:success.html.twig', array('count' => $this->count()));
+    }
+
+    public function aboutAction()
+    {
+        return $this->render('SvkWelcomeBundle:Footer:about.html.twig', array('count' => $this->count()));   
+    }
+
+    public function faqAction()
+    {
+        return $this->render('SvkWelcomeBundle:Footer:faq.html.twig', array('count' => $this->count()));   
+    }
+
+    public function contactAction()
+    {
+        return $this->render('SvkWelcomeBundle:Footer:contact.html.twig', array('count' => $this->count()));   
     }
 }
