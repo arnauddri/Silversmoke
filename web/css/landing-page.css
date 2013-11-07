@@ -1092,3 +1092,28 @@ footer p{
 #about .col-md-6 .desc{
 	display: inline-block;
 }
+
+
+#about .col-md-12{
+	text-align: center;
+	padding-top: 30px;
+	margin-top: 50px
+}
+
+#about .col-md-12 h4{
+	margin-top: 50px;
+	color:#4B4B4B;
+  font-family:"Proxima-light", 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-size:25px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
