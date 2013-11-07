@@ -590,6 +590,10 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	text-align: center;
 }
 
+#competition span {
+	background-color: #FFBB42;
+}
+
 #competition .desc {
 	background-color: #FFBB42;
 	color: #fff;
@@ -597,6 +601,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 
 #competition .col-md-6.desc .desc-body{
 	margin-top: 30px;
+	background-color: #FFBB42;
 }
 
 #competition .col-md-6.desc .desc-body div{
@@ -743,6 +748,9 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	text-align: center;
 	min-height: 400px;
 	padding-top: 80px;
+  color:#4B4B4B;
+  font-family:"Proxima-light", 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-size:45px;
 }
 
 #arrive-soon .cig-img{
@@ -1041,6 +1049,10 @@ footer p{
 
 
 /*-----ABOUT-----*/
+#about{
+	margin-bottom: 100px
+}
+
 #about .bs-sidebar{
 	border: 1px solid #DDDDDD;
 	width: 250px;
@@ -1056,4 +1068,27 @@ footer p{
 	margin: 0px;
 	border-bottom: 1px solid #DDDDDD;
 	padding: 10px
+}
+
+#about .col-md-6 div{
+}
+
+#about .about-header{
+	text-align: center;
+	display: block;
+}
+
+#about .about-header h1{
+	margin-bottom: 40px;
+  color:#4B4B4B;
+  font-family:"Proxima-light", 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-size:45px;
+}
+#about .about-header h4{
+	margin-bottom: 30px;
+	margin-top: 40px;
+}
+
+#about .col-md-6 .desc{
+	display: inline-block;
 }

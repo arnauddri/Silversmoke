@@ -5,26 +5,29 @@
 {% block content %}
 <div id="about" class="container">
 	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class='about-header'>
+				<h1>
+					Silversmoke
+				</h1>
+				<img class="section-separator" src="{{ asset('img/section-separator.png') }}" alt="Quit smoking using a connected electronic cigarette!" width="300px">
+				<h4>Quit smoking without the pain & frustration</h4>
+			</div>
 
-		<div class="col-md-3">
-			<div class="bs-sidebar hidden-print affix" role="complementary">
-				<ul class="nav bs-sidenav">
-					<li>Team</li>
-					<li>Company</li>
-					<li>Starter Pack</li>
-				</ul>
+			<div class="col-md-4">
+			<img src="{{ asset('img/woman-electronic-cigarette.jpg') }}" class="img-circle" alt="Quit smoking using a connected electronic cigarette!" width="150px">
+			</div>
+
+			<div class="col-md-8">
+				<p>
+					Silversmoke replaces your traditional cigarettes with an electronic cigarettes connected to your Smartphone. Wit Silversmoke you can instantly see how much nicotine you smoked recently and how quickly you should reduce your consumption. It is the motivation you need to quit smoking!
+				</p><p>
+				Whether you are a long time user of electronic cigarettes or jsut now thinking of making the switch, you will undoubtedly be seduced by our Starter Kit.</p>
 			</div>
 		</div>
-
-		<div class="col-md-5">
-			<h1>
-				Silversmoke
-			</h1>
-			<h4>Quit smoking without the pain & frustration</h4>
-			<p>Company is a French startup helping people getting rid of their smoking habits. We connect your smartphone to your electronic cigarette to extract the most valuable data which can help you reduce your consumption</p>
-		</div>
-
 	</div>
+
+</div>
 </div>
 
 {% endblock %}

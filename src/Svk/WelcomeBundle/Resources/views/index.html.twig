@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {% block title %}<title>Silversmoke | Smoke healthier</title>{% endblock %}
+  {% block title %}<title>Silversmoke | Quit Smoking without Frustration</title>{% endblock %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
@@ -268,6 +268,7 @@
             <div class="col-md-6">
               <img src="{{ asset('img/compete-picture.png') }}" width="100%" alt="Quit smoking using a connected electronic cigarette!">
             </div>
+            <span>
             <div class='col-md-6 desc' style='background-color:#FFBB42;'>
               <div class='desc-header' style="background-color:#FFA72F">
                 <h2>Share and Compete with Friends</h2>
@@ -281,6 +282,7 @@
                 <img src="{{ asset('img/iphone-competition.png') }}" width="180" alt="Quit smoking using a connected electronic cigarette!">
               </div>
             </div>
+            </span>
           </div>
         </div>
       </div>
@@ -494,10 +496,11 @@
             <img src="{{ asset('img/silver-logo-big.png') }}" alt="Quit smoking using a connected electronic cigarette!">
           </div>
         </div>
-        <p>To be the first one to claim your Silversmoke Starter Kit, just sign up below and enjoy a <strong>20%-Off discount!</strong></p>
+          <h2>Reserve your Starter Pack Today, for Free</h2>
+        <p>We will soon be selling a limited number of 3,000 Starter Packs. To make sure you are the first one to claim your Silversmoke Starter Kit, you can now reserve one by signing up. <br>Just sign up below to claim your Starter Pack and enjoy a <strong>20%-Off discount!</strong></p>
         <p>Hurry up, there's only:</p>
         <div class="countdown">
-        <strong>{{ (3000 - count)|number_format(0, '.', ',') }} vouchers left!</strong>
+        <strong>{{ (3000 - count)|number_format(0, '.', ',') }} Starter Packs left!</strong>
         </div>
         <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
           Reserve Now and Enjoy 20% Off
@@ -528,7 +531,7 @@
     <ul>
       <li><a href="{{ path('svk_welcome_about') }}">About</a></li>
       <li>|</li>
-      <li><a href="{{ path('svk_welcome_faq') }}">Help & FAQs</a></li>
+      <li><a href="{{ path('svk_welcome_faq') }}">Learn More</a></li>
       <li>|</li>
       <li><a href="{{ path('svk_welcome_contact') }}">Contact</a></li>
     </ul>
