@@ -17,7 +17,7 @@
 				</div>
 				<div class="signup-form">
 					<div class='age-verification'><small>Silversmoke is committed to only selling its producs to people of legal smoking age. Please verify you age to sign up.</small></div>
-					<input type="text" id="form_birthday" placeholder="MM-YY" name="form[birthday]" required="required" class="date"/>
+					{{ form_widget(form.birthday) }}
 				</div>
 				<div  class="signup-form signup-email">
 					<input type="email" id="form_email" placeholder="Your e-mail Address" name="form[email]" required="required"/>
