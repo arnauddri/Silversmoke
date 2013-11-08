@@ -8,7 +8,7 @@ h2{
 	font-family: "Proxima-light";
 }
 
-* input, textarea{
+input, textarea{
 	-webkit-appearance:none;
 	-webkit-box-shadow:none;
 	-webkit-transition:border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
@@ -21,9 +21,9 @@ h2{
 }
 
 
-* input,textarea:focus{
+input,textarea:focus{
 	border-color: #1ABC9C;
-	border:2px solid  #1ABC9C !important;
+	border:2px solid  #1ABC9C;
 	outline: none;
 }
 
