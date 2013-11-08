@@ -867,7 +867,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 #whats-included .countdown strong{
 	font-size: 22px;
 	line-height: 50px;
-	background-color: rgba(255, 187, 66, 0.2);
+	background-color: rgba(255, 187, 66, 0.1);
 	border-radius: 5px;
 	padding: 20px;
 	color: #e68d15;
@@ -935,75 +935,48 @@ footer p{
 
 
 /*MODAL*/
-.modal{
-	overflow: hidden;
-}
 
-.modal input{
+.signup input{
 	margin: 10px auto;
 }
 
-.modal form{
+.signup form{
 	text-align: center;
 }
 
-.modal #form_firstname,.modal #form_lastname{
-	width: 200px;
 
-}
-
-.modal .signup-email{
+.signup .signup-email{
 	margin-left:auto;
 	margin-right: auto;
 
 }
 
-.modal #form_email{
+.signup #form_email{
 	width: 400px;
 }
 
-.modal .age-verification{
+.signup .age-verification{
 	width: 340px;
 	line-height: 12px;
 	margin-right:auto;
 	margin-left: auto;
 }
 
-.modal-footer{
+.signup-footer{
 	text-align: center;
 }
 
-.modal-footer input{
-	width: 200px;
-	font-size: 18px;
+.signup-footer input{
+	width: 350px;
+	font-size: 16px;
+	height: 50px;
+	margin-top:30px;
 }
 
+.signup #form_firstname,.signup #form_lastname, .signup #form_email{
+	width: 350px;
 
-.modal .alert{
-	text-align: center;
 }
-
-.modal-header{
-	background-color: #428BCA;
-	color: white;
-	border-top-left-radius:6px;
-	border-top-right-radius:6px;
-	height: 80px;
-	padding-top: 25px;
-	text-align: center;
-}
-
-.modal-header .modal-title{
-	font-size: 20px
-}
-
-.modal-footer{
-	background-color: rgb(250,250,250);
-	border-bottom-left-radius:6px;
-	border-bottom-right-radius:6px;
-}
-
-
 
 
 
