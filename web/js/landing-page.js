@@ -32,6 +32,7 @@ $(document).scroll(function() {
 });
 
 
+$('#congrats').height($('#congrats-container').height());
 $('#competition .col-md-6.desc').height($('#competition .col-md-6').height());
 $('#consumption-cap .col-md-6.iphone-screenshot').height($('#consumption-cap .col-md-6.desc').height());
 

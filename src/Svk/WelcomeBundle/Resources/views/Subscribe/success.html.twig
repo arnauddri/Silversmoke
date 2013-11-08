@@ -1,18 +1,25 @@
 {% extends 'SvkWelcomeBundle::index.html.twig' %}
 
 {% block content %}
+<section id='congrats'>
+	<div id="congrats-container" class="col-md-6 col-md-offset-3">
+		<div class="congratulations">
+			<h1>Congratulations</h1>
+			<p>You will soon receive an e-mail with your Voucher code. </p>
+			<p> What's next? we will inform you as soon as we are ready to release the Starter Kits and you'll be able to purchase your with your Coupon wiht a 20% discount.</p>
+		</div>
 
-<div>
-congratulations, you will receive an email and maybe one day an electronic cigarette conected to your iPhone wohoo
-</div>
 
-<div>
-	<p>Share with your friends</p>
-	<div class="fb-like" data-href="https://www.facebook.com/getsilversmoke" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
-	<div>
-		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getsilversmoke.com" data-text="Just ordered my Silversmoke pack" data-via="getsilversmoke" data-size="large" data-count="none">Tweet</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<div class="share">
+			<h4>Share with your friends</h4>
+			<div class="fb-like" data-href="https://www.facebook.com/getsilversmoke" data-layout="standard" data-action="like" data-show-faces="false" data-share="true">
+				
+			</div>
+			<div>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getsilversmoke.com" data-text="Just ordered my Silversmoke pack" data-via="getsilversmoke" data-size="large" data-count="none">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+		</div>
 	</div>
-</div>
-
+</section>
 {% endblock %}
