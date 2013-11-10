@@ -41,7 +41,7 @@ $('.usp1').hover(
 		$('.usp1-1').stop().animate({ top: 0 }); 
 		$('.usp1-2').stop().animate({ top: 200 }); 
 	}
-);
+	);
 
 $('.usp2').hover(
 	function() {
@@ -52,7 +52,7 @@ $('.usp2').hover(
 		$('.usp2-1').stop().animate({ top: 0 }); 
 		$('.usp2-2').stop().animate({ top: 200 }); 
 	}
-);
+	);
 
 $('.usp3').hover(
 	function() {
@@ -63,7 +63,7 @@ $('.usp3').hover(
 		$('.usp3-1').stop().animate({ top: 0 }); 
 		$('.usp3-2').stop().animate({ top: 200 }); 
 	}
-);
+	);
 
 $('.usp4').hover(
 	function() {
@@ -74,12 +74,12 @@ $('.usp4').hover(
 		$('.usp4-1').stop().animate({ top: 0 }); 
 		$('.usp4-2').stop().animate({ top: 200 }); 
 	}
-);
+	);
 
 
 
-    var catTopPosition4 = jQuery('#whats-included').offset().top-50;
-    
+var catTopPosition4 = jQuery('#whats-included').offset().top-50;
+
     // When #scroll is clicked
     jQuery('#signup').click(function(){
         // Scroll down to 'catTopPosition'
@@ -100,10 +100,15 @@ $('.usp4').hover(
     $(document).ready(function() { 
 
 
-$('#congrats').height($('#congrats-container').height());
-$('#competition .col-md-6.desc').height($('#competition .col-md-6').height());
-$('#consumption-cap .col-md-6.iphone-screenshot').height($('#consumption-cap .col-md-6.desc').height());
+    	$('#congrats').height($('#congrats-container').height());
+    	$('#competition-desc').height($('#competition-image').height());
+    	$('#consumption-cap .col-md-6.iphone-screenshot').height($('#consumption-cap .col-md-6.desc').height());
 
-$('#consumption-cap-iphone').height($('#consumption-cap-desc').height());
+    	$('#consumption-cap-iphone').height($('#consumption-cap-desc').height());
 
-    	});
+    });
+
+
+
+
+
