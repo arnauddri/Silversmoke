@@ -8,8 +8,8 @@ parameters:
 
     mailer_transport:  smtp
     mailer_host:       smtp.alwaysdata.com
-    mailer_user:       jules@twinkler.co
-    mailer_password:   Ozanam1956
+    mailer_user:       contact@getsilversmoke.com
+    mailer_password:   silver1956
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
