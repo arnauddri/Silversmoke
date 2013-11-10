@@ -282,9 +282,7 @@
             <img src="{{ asset('img/silver-logo-big.png') }}" alt="Quit smoking using a connected electronic cigarette!">
           </div>
         </div>
-        <h2>Reserve your Starter Pack Today, for Free</h2>
-        <p>Our Starter Packs arrive in Spring 2014.<br>
-        Reserve yours today and get <strong style='color:#5CB85C'>20% Off</strong> on all Silversmoke products</p>
+        <h2>Reserve your Starter Pack Today and <strong style='color:#5CB85C'>Get 20% Off</strong></h2>
         <p>Hurry up, there's only:</p>
         <div class="countdown">
           <strong>{{ (3000 - count)|number_format(0, '.', ',') }} Starter Packs left!</strong>
@@ -292,7 +290,8 @@
 
         <div class="form-container">
           
-        <p>Simply fill in this form to receive your voucher:</p>
+        <p>
+        Sign up today and we will save you a Starter Pack - it's all free, no credit card needed!</p>
           {% render(controller('SvkWelcomeBundle:Welcome:subscribe')) %}
 
         </div>
