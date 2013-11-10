@@ -1123,7 +1123,8 @@ footer p{
 /*-----CONGRATULATIONS-----*/
 #congrats{
 	margin-top: 80px;
-	margin-bottom: 150px
+	margin-bottom: 150px;
+	min-height: 300px;
 }
 
 #congrats .col-md-6{
