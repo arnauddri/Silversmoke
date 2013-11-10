@@ -33,7 +33,7 @@ class WelcomeController extends Controller
 	        ->add('firstname', 'text')
 	        ->add('lastname', 'text')
 	        ->add('email', 'email')
-	        ->add('birthday', 'date', array(
+	        ->add('birthday', 'birthday', array(
                         'widget' => 'choice',
                         'format' => 'dd-MMM-yyyy',
                         'attr' => array('class' => 'date')))
