@@ -2,6 +2,10 @@
 
 {% block title %}<title>Silversmoke | About</title>{% endblock %}
 
+{% block reserve_button %}
+<li><a href="{{ path('svk_welcome_homepage') }}#whats-included"><button class='btn btn-success'>Reserve Yours Now - Get 20% off</button></a></li>
+{% endblock %}
+
 {% block content %}
 <div id="about" class="container">
 	<div class="row">
@@ -31,7 +35,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<a data-toggle="modal" data-target="#myModal"><h4>Reserve your Starter Pack</h4></a>
+			<a href="{{ path('svk_welcome_homepage') }}#whats-included"><h4>Reserve your Starter Pack</h4></a>
 		</div>
 	</div>
 </div>

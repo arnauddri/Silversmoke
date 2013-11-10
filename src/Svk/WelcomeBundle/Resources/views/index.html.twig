@@ -48,7 +48,9 @@
 
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#">Starter Packs Left: <strong>{{ (3000 - count)|number_format(0, '.', ',') }}</strong></a></li>
+                  {% block reserve_button %}
                   <li><a id="reserve"><button class='btn btn-success'>Reserve Yours Now - Get 20% off</button></a></li>
+                  {% endblock %}
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div>

@@ -1,5 +1,11 @@
 {% extends 'SvkWelcomeBundle::index.html.twig' %}
 
+{% block title %}<title>Silversmoke | Thank you</title>{% endblock %}
+
+{% block reserve_button %}
+<li><a href="{{ path('svk_welcome_homepage') }}#whats-included"><button class='btn btn-success'>Reserve Yours Now - Get 20% off</button></a></li>
+{% endblock %}
+
 {% block content %}
 <section id='congrats'>
 	<div id="congrats-container" class="col-md-6 col-md-offset-3">
