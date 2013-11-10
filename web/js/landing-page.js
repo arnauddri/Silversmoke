@@ -32,12 +32,6 @@ $(document).scroll(function() {
 });
 
 
-$('#congrats').height($('#congrats-container').height());
-$('#competition .col-md-6.desc').height($('#competition .col-md-6').height());
-$('#consumption-cap .col-md-6.iphone-screenshot').height($('#consumption-cap .col-md-6.desc').height());
-
-$('#consumption-cap-iphone').height($('#consumption-cap-desc').height());
-
 $('.usp1').hover(
 	function() {
 		$('.usp1-1').stop().animate({ top: -200 }); 
@@ -100,3 +94,16 @@ $('.usp4').hover(
         // Stop the link from acting like a normal anchor link
         return false;
     });
+
+
+
+    $(document).ready(function() { 
+
+
+$('#congrats').height($('#congrats-container').height());
+$('#competition .col-md-6.desc').height($('#competition .col-md-6').height());
+$('#consumption-cap .col-md-6.iphone-screenshot').height($('#consumption-cap .col-md-6.desc').height());
+
+$('#consumption-cap-iphone').height($('#consumption-cap-desc').height());
+
+    	});
