@@ -21,7 +21,7 @@ input, textarea{
 }
 
 
-input,textarea:focus{
+input:focus,textarea:focus{
 	border-color: #1ABC9C;
 	border:2px solid  #1ABC9C;
 	outline: none;
@@ -798,7 +798,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 
 #whats-included h2{
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 
 #whats-included .package-content{
@@ -843,6 +843,24 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	width: 30%;
 }
 
+#form_birthday_day,#form_birthday_month,#form_birthday_year{
+    padding:8px 10px;
+    margin: 0px 5px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    background: #fff;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+  	border:2px solid #BDC3C7;
+}
+
 #whats-included .order-today .signup-form.signup-email input{
 	width: 60%;
 	margin: 0px;
@@ -854,7 +872,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 
 #whats-included p{
 	font-size: 18px;
-	margin: 30px 50px;
+	margin: 10px 50px;
 	margin-bottom: 0px;
 }
 
@@ -899,7 +917,23 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	line-height: 20px
 }
 
+#whats-included .form-container{
+	background-color: #EFEFEF;
+	padding: 20px;
+	border-radius: 6px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+#whats-included .dob-verif{
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+#whats-included .dob-verif div{
+	display: inline-block;
+}
 
 
 footer{

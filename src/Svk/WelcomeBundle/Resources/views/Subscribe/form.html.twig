@@ -8,8 +8,11 @@
 
 					<input type="text" id="form_firstname" placeholder="Enter your Firstname" name="form[firstname]" required="required"/><br>
 					<input type="text" id="form_lastname" placeholder="Enter your Lastname" name="form[lastname]" required="required"/>
-					<div class='age-verification'><small>Silversmoke is committed to only selling its producs to people of legal smoking age. Please verify you age to sign up.</small></div>
+					<div class="dob-verif">
+					<div>Date of Birth:</div>
 					{{ form_widget(form.birthday) }}
+					</div>
+					<div class='age-verification'><small>Silversmoke is committed to only selling its products to people of legal smoking age. Please verify you age to sign up.</small></div>
 					<input type="email" id="form_email" placeholder="Enter your e-mail Address" name="form[email]" required="required"/>
 
 					{{ form_widget(form._token) }}

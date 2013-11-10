@@ -35,7 +35,7 @@ class WelcomeController extends Controller
 	        ->add('email', 'email')
 	        ->add('birthday', 'date', array(
                         'widget' => 'choice',
-                        'format' => 'dd-MM-yyyy',
+                        'format' => 'dd-MMM-yyyy',
                         'attr' => array('class' => 'date')))
 	        ->getForm();
 

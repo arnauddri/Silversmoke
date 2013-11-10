@@ -48,7 +48,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#">Starter Packs Left: <strong>{{ (3000 - count)|number_format(0, '.', ',') }}</strong></a></li>
-                  <li><a href="#whats-included"><button class='btn btn-success'>Reserve Yours Now - Get 20% off</button></a></li>
+                  <li><a id="reserve"><button class='btn btn-success'>Reserve Yours Now - Get 20% off</button></a></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div>
@@ -64,7 +64,7 @@
               <div class="col-md-5" style="padding-top: 150px; text-align:center">
                 <h1>The Smart, Simple and Fun way to reduce smoking</h1>
                 <h3>The first electronic cigarette that tracks your consumption on your smartphone</h3>
-                <button class='btn btn-primary btn-lg' href="#whats-included">RESERVE YOURS NOW</button>
+                <button id="signup" class='btn btn-primary btn-lg'>RESERVE YOURS NOW</button>
                 <div style="margin-top: 30px">
                   <div class="fb-like" data-href="https://www.facebook.com/getSilversmoke" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
                 </div>                 
@@ -79,7 +79,7 @@
           <div class='container'>
             <div class='row'>
               <div class="caption">
-                <h2>The First Electronic Cigarette designed to take the Pain out of quitting</h2>
+                <h2>The First Electronic Cigarette designed to take the Pain out of Quitting</h2>
               </div>
               <div class="col-md-5 usp-desc">
                 <h4>KILL THE FRUSTRATION, NOT THE FUN</h4>
@@ -164,43 +164,6 @@
           </div>
         </section>
 
-
-        <!-- Monitor your consumption 
-        <section id='monitor'>
-          <div class='container'>
-            <div class='row'>
-              <div class="col-md-12">
-                <div class="col-md-5">
-                  <img src="{{ asset('img/woman-electronic-cigarette.jpg') }}" width="350">
-                </div>
-                <div class='col-md-7 desc'>
-                  <div class='desc-header'>
-                    <h2>Use your Smartphone to see how you smoke</h2>
-                  </div>
-                  <div class='desc-body'>
-                    Silversmoke is the first e-cigarette that actually helps you quit smoking. Because it tells you:
-                    <table>
-                      <tr>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/cigarette-smoked.png') }}" width="30"></div><div>NICOTINE SMOKED</div></td>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/smoking-trend.png') }}" width="25"></div><div>YOUR SMOKING TREND</div></td>
-                      </tr>
-                      <tr>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/money-saved.png') }}" width="25"></div class="monitor-table-icon"><div>THE MONEY YOU SAVED</div></td>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/money-spend.png') }}" width="30"></div><div>THE MONEY YOU SPEND</div></td>
-                      </tr>
-                      <tr>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/battery.png') }}" width="30"></div><div>BATTERY LEFT IN YOUR CIGARETTE</div></td>
-                        <td><div class="monitor-table-icon"><img src="{{ asset('img/puff-left.png') }}" width="20"></div><div>PUFFS LEFT IN YOUR CARTRIDGE</div></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      -->
-
       <!-- Set Goal -->
       <section id='consumption-cap'>
         <div class='container'>
@@ -216,14 +179,6 @@
               </div>
 
               <div class='progress-container'>
-              <!--
-                <div class="progress progress-top">
-                  <div class="progress-bar progress-top" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                    <p><span class="percent-text">12</span></p>
-                  </div>
-                </div>
-              -->  
-
               <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                   <p><span class="percent-text">12</span></p>
@@ -289,95 +244,6 @@
     </div>
   </section>
 
-
-  <!-- Set Goal 
-  <section id='tweet'>
-    <div class='container'>
-      <div class='row'>
-        <div class="col-md-12">
-          <div class="col-md-6">
-            <div class=" tweet-desc">
-              <div class="desc-body">
-                <p>
-                  Tell the world about your accomplishements. 
-                </p>
-                <img src="{{ asset('img/twitter-logo.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 tweet">
-          <div class="tweet-progress">
-            <div class='tweet-header'>
-              <div>
-                <img src="{{ asset('img/blond-smoker.jpg') }}" class='img img-rounded' width="60px" height="60px" alt="Quit smoking using a connected electronic cigarette!">
-              </div>
-              <div class="tweeter-name">
-                <font style="color: #292F33; font-weight:bold; font-size: 20px">Emily</font><br>
-              </div>
-              <div class="tweeter-button">
-                <img src="{{ asset('img/follow.png') }}"  alt="Quit smoking using a connected electronic cigarette!">
-              </div>
-            </div>
-            <div class='tweet-body'>
-              Just said no to 8 cigarettes this week!! That's $5.36 saved! 
-              <a href="">#eCig #GetSilversmoke</a>
-            </div>
-            <div class='tweet-footer'>
-              <span class="glyphicon glyphicon-share-alt"></span>
-              <span class="glyphicon glyphicon-retweet"></span>
-              <span class="glyphicon glyphicon-star"></span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
--->
-
-  <!-- REWARD 
-  <section id='reward-section'>
-    <div class='container'>
-      <div class='row'>
-        <div class="col-md-12">
-          <h2>Join people around the world managing their consumption one milestone at a time</h2>
-        </div>
-        <div class="row badge-container">
-          <h5>GET BADGES TO REWARD YOUR PROGRESS:</h5>
-          <div class='col-md-12'>
-            <div class='col-md-2'>
-              <img src="{{ asset('img/heart-badge.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-              <h6>MIGHTY MENTOR</h6>
-            </div>
-            <div class='col-md-2'>
-              <img src="{{ asset('img/best-twitter.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-              <h6>20 TWEETS</h6>
-            </div>
-            <div class='col-md-2'>
-              <img src="{{ asset('img/rocket-badge.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-              <h6>LIFETIME ACHIEVEMENT</h6>
-            </div>
-            <div class='col-md-2'>
-              <img src="{{ asset('img/crown-badge.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-              <h6>CHAMPION FOR CHANGE</h6>
-            </div>
-            <div class='col-md-2'>
-              <img src="{{ asset('img/stat-badge.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-              <h6>BIG SAVER</h6>
-            </div>
-            <div class='col-md-2'>
-              <img src="{{ asset('img/award-badge.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-              <h6>TARGET REACHED</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
-
 <!-- Parallax -->
 <section id="parallax" data-stellar-background-ratio="0.5" style="background-position: 10% 484.5px;">
   <div class="container">
@@ -393,86 +259,6 @@
 
 </section>
 
-
-
-<!-- CIG-SPEC 
-<section id="cig-spec">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Get your Silversmoke Starter Pack Today</h2>
-        <div class="device-pic">
-          <img src="{{ asset('img/sliversmoke-hori.png') }}" alt="Quit smoking using a connected electronic cigarette!">
-        </div>
-      </div>
-
-      <div class='col-md-12'>
-        <div class="col-md-3">
-          <div class='item item-1'>
-            <span>
-              <img src="{{ asset('img/silversmoke-cig-icon.png') }}" width="15" alt="Quit smoking using a connected electronic cigarette!">
-            </span>
-          </div> 
-          <div class='item-desc'>
-            <h4>The Silversmoke E-Cigarette</h4>
-            <ul>
-              <li>Rechargeable Battery</li>
-              <li>Bluetooth 4.0</li>
-              <li>Fully reusable</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class='item item-2'>
-            <span>
-              <img src="{{ asset('img/silversmoke-sensor.png') }}" width="55" alt="Quit smoking using a connected electronic cigarette!">
-            </span>
-          </div> 
-          <div class='item-desc'>
-            <h4>The Silversmoke App</h4>
-            <ul>
-              <li>Free to download</li>
-              <li>Available for Android and iOS</li>
-              <li>Synchronized online</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class='item item-3'>
-            <span>
-              <img src="{{ asset('img/cartridge.png') }}" width="50" alt="Quit smoking using a connected electronic cigarette!">
-            </span>
-          </div> 
-          <div class='item-desc'>
-            <h4>Flavor Cartridges</h4>
-            <ul>
-              <li>1 Cartridge: 250 Puffs</li>
-              <li>20 cartridges per pack</li>
-              <li>10 different flavors</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class='item item-4'>
-            <span>
-              <img src="{{ asset('img/usb-charger.png') }}" width="50" alt="Quit smoking using a connected electronic cigarette!">
-            </span>
-          </div> 
-          <div class='item-desc'>
-            <h4>Lightning Fast Charger</h4>
-            <ul>
-              <li>USB 2.0</li>
-              <li>Regular plugs</li>
-              <li>Recharge your e-cig in 2 hours</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
 
 <section id="arrive-soon">
   <div class="container">
@@ -497,15 +283,16 @@
           </div>
         </div>
         <h2>Reserve your Starter Pack Today, for Free</h2>
-        <p>Our Starter Packs arrive in Spring 2014.</p>
-        <p>Reserve yours today and get <strong style='color:#5CB85C'>20% Off!</strong></p>
+        <p>Our Starter Packs arrive in Spring 2014.<br>
+        Reserve yours today and get <strong style='color:#5CB85C'>20% Off</strong> on all Silversmoke products</p>
         <p>Hurry up, there's only:</p>
         <div class="countdown">
           <strong>{{ (3000 - count)|number_format(0, '.', ',') }} Starter Packs left!</strong>
         </div>
-        <div>
+
+        <div class="form-container">
           
-        <p>Simply fill in this form and receive your voucher by e-mail:</p>
+        <p>Simply fill in this form to receive your voucher:</p>
           {% render(controller('SvkWelcomeBundle:Welcome:subscribe')) %}
 
         </div>

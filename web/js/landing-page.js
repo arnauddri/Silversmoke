@@ -81,3 +81,22 @@ $('.usp4').hover(
 		$('.usp4-2').stop().animate({ top: 200 }); 
 	}
 );
+
+
+
+    var catTopPosition4 = jQuery('#whats-included').offset().top-50;
+    
+    // When #scroll is clicked
+    jQuery('#signup').click(function(){
+        // Scroll down to 'catTopPosition'
+        jQuery('html, body').animate({scrollTop:catTopPosition4}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+    });
+
+    jQuery('#reserve').click(function(){
+        // Scroll down to 'catTopPosition'
+        jQuery('html, body').animate({scrollTop:catTopPosition4}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+    });
