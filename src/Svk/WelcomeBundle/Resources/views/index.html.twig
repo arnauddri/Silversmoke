@@ -47,9 +47,9 @@
 
 
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Starter Packs Left: <strong>{{ (3000 - count)|number_format(0, '.', ',') }}</strong></a></li>
+                  <li></li>
                   {% block reserve_button %}
-                  <li><a id="reserve"><button class='btn btn-success'>Reserve Yours Now - Get 20% off</button></a></li>
+                  <li><a id="reserve"><button class='btn btn-success'>Sign Up</button></a></li>
                   {% endblock %}
                 </ul>
               </div><!-- /.navbar-collapse -->
@@ -66,7 +66,7 @@
               <div class="col-md-5" style="padding-top: 150px; text-align:center">
                 <h1>The Smart, Simple and Fun way to reduce smoking</h1>
                 <h3>The first electronic cigarette that tracks your consumption on your smartphone</h3>
-                <button id="signup" class='btn btn-primary btn-lg'>RESERVE YOURS NOW</button>
+                <button id="signup" class='btn btn-primary btn-lg'>SIGN UP NOW</button>
                 <div style="margin-top: 30px">
                   <div class="fb-like" data-href="https://www.facebook.com/getSilversmoke" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
                 </div>                 
@@ -300,16 +300,12 @@
                   <img src="{{ asset('img/silver-logo-big.png') }}" alt="Quit smoking using a connected electronic cigarette!">
                 </div>
               </div>
-              <h2>Reserve your Starter Pack today and <strong style='color:#5CB85C'>get 20% off</strong></h2>
-              <p>Hurry up, there are only:</p>
-              <div class="countdown">
-                <strong>{{ (3000 - count)|number_format(0, '.', ',') }} Starter Packs left!</strong>
-              </div>
+              <h2>Sign up today and <strong style='color:#5CB85C'>get 20% off</strong></h2>
 
               <div class="form-container">
 
                 <p>
-                  Sign up today and we we'll reserve you a Starter Pack - it's all free, no credit card needed!</p>
+                  Sign up today to be the first one to hear when our Starter Packs are ready and receive a 20% off voucher</p>
                   {% render(controller('SvkWelcomeBundle:Welcome:subscribe')) %}
 
                 </div>
