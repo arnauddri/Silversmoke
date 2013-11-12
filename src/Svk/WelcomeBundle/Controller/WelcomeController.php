@@ -29,9 +29,10 @@ class WelcomeController extends Controller
 	    $subscriber->setBirthday(new \Datetime('today'));
 	    $subscriber->setCountry('somewhere');
 
+        $subscriber->setFirstname('');
+        $subscriber->setLastname('');
+
 	    $form = $this->createFormBuilder($subscriber)
-	        ->add('firstname', 'text')
-	        ->add('lastname', 'text')
 	        ->add('email', 'email')
 	        ->add('birthday', 'birthday', array(
                         'widget' => 'choice',
